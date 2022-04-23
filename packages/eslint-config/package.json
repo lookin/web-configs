@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "eslint-config-lookin",
+  "//version": "Follow CalVer specs at https://calver.org/",
+  "version": "2022.4.24",
+  "description": "ESLint Shareable Config used by Lookin",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "lookin"
+  ],
+  "homepage": "https://github.com/lookin/web-configs#readme",
+  "bugs": "https://github.com/lookin/web-configs/issues",
+  "license": "MIT",
+  "author": "Anthony Lukin <anthony@lukin.dev> (https://lukin.dev)",
+  "exports": {
+    "./base": "./base.js",
+    "./next": "./next.js",
+    "./react": "./react.js",
+    "./rules/eslint-comments": "./rules/eslint-comments.js",
+    "./rules/import": "./rules/import.js",
+    "./rules/prettier": "./rules/prettier.js",
+    "./rules/promise": "./rules/promise.js",
+    "./rules/react": "./rules/react.js",
+    "./rules/simple-import-sort": "./rules/simple-import-sort.js",
+    "./rules/typescript": "./rules/typescript.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lookin/web-configs.git",
+    "directory": "packages/eslint-config"
+  },
+  "dependencies": {
+    "@next/eslint-plugin-next": "^12.1.5",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.1.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  }
+}

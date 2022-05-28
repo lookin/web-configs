@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "@lookin/tailwind-preset",
   "//version": "Follow CalVer specs at https://calver.org/",
-  "version": "2022.4.24",
+  "version": "2022.5.28",
   "description": "Tailwind CSS Shareable Preset used by Lookin",
   "keywords": [
     "tailwindcss",
@@ -22,6 +22,6 @@
     "@types/tailwindcss": "^3.0.10"
   },
   "peerDependencies": {
-    "tailwindcss": "^3.0.24"
+    "tailwindcss": "^3.0.0"
   }
 }

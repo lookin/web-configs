@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "@lookin/prettier-config",
   "//version": "Follow CalVer specs at https://calver.org/",
-  "version": "2022.4.24",
+  "version": "2022.5.28",
   "description": "Prettier Shareable Config used by Lookin",
   "keywords": [
     "prettier",
@@ -17,5 +17,8 @@
     "type": "git",
     "url": "https://github.com/lookin/web-configs.git",
     "directory": "packages/prettier-config"
+  },
+  "peerDependencies": {
+    "prettier": "^2.0.0"
   }
 }

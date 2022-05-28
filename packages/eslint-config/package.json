@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "eslint-config-lookin",
   "//version": "Follow CalVer specs at https://calver.org/",
-  "version": "2022.4.24",
+  "version": "2022.5.28",
   "description": "ESLint Shareable Config used by Lookin",
   "keywords": [
     "eslint",
@@ -17,11 +17,14 @@
     "./base": "./base.js",
     "./next": "./next.js",
     "./react": "./react.js",
+    "./react-native": "./react-native.js",
     "./rules/eslint-comments": "./rules/eslint-comments.js",
     "./rules/import": "./rules/import.js",
+    "./rules/next": "./rules/next.js",
     "./rules/prettier": "./rules/prettier.js",
     "./rules/promise": "./rules/promise.js",
     "./rules/react": "./rules/react.js",
+    "./rules/react-native": "./rules/react-native.js",
     "./rules/simple-import-sort": "./rules/simple-import-sort.js",
     "./rules/typescript": "./rules/typescript.js"
   },
@@ -31,9 +34,9 @@
     "directory": "packages/eslint-config"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^12.1.5",
-    "@typescript-eslint/eslint-plugin": "^5.20.0",
-    "@typescript-eslint/parser": "^5.20.0",
+    "@next/eslint-plugin-next": "^12.1.6",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
@@ -43,13 +46,23 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-plugin-simple-import-sort": "^7.0.0"
   },
+  "devDependencies": {
+    "eslint": "8.16.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.7.2"
+  },
   "peerDependencies": {
-    "eslint": "^8.1.0",
-    "prettier": "^2.4.1",
-    "typescript": "^4.4.4"
+    "eslint": "^8.0.0",
+    "prettier": "^2.0.0",
+    "typescript": "^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
   }
 }
